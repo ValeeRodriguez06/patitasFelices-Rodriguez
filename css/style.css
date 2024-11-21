@@ -37,8 +37,8 @@ p{
 /*Tamaño*/
 header img{
     width: 80px;
-    
-}
+}  
+
 header{
     background-color: #A594F9;
     display: flex;
@@ -46,6 +46,9 @@ header{
     justify-content: space-between;
     position: sticky;
     top: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000
+    
 }
 nav{
     width: 80%;
@@ -57,7 +60,9 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
+
 }
+
 .lista-nav a{
     color: black;
     text-decoration: underline;
@@ -88,7 +93,7 @@ nav{
 /*MAIN*/
 
 .p{
-    background-color: rgb(164, 96, 228);
+    background-image: linear-gradient(to bottom, rgb(127, 12, 230), blueviolet, #A594F9);
     padding: 15px;
     margin-left: 0%
 
@@ -157,6 +162,7 @@ nav{
 }
 .paso3{
     grid-area: img3;
+    padding-top: 30px;
 }
 .parrafo3{
     grid-area: text3;
@@ -193,6 +199,10 @@ body{
     overflow-x: hidden ;
  }
 
+ .pr{
+    font-size: 1.2rem;
+ }
+
 /*Main Nosotros*/
 .nosotros{
     text-align: center;
@@ -221,7 +231,7 @@ body{
 
 .imgn3{
     margin-left: 130px;
-
+    
 }
 .pn3{
     padding-left: 30px;
@@ -237,21 +247,31 @@ body{
     text-align: center;
 }
 
-.imgc{
-    padding: 15px;
-    padding-left: 0px;
-    padding-bottom: 15px;
-    height: 700px;
+.img-fluid {
+    padding: 15px 0;
+    height: auto; 
 }
 
 .sc{
-    display: flex;
-    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.ratio iframe {
+    border-radius: 8px; /* esquinas redondeadas */
+    pointer-events: auto;
+    padding-right: 15px;
+}
+
+.enviar:focus {
+    border: blueviolet 5px dotted;
 }
 /*Main Mascotas*/
 
 .h1m{
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -270,6 +290,56 @@ body{
     font-size: 1.5rem;
     background-color: #A594F9;
 }
+.perro1{
+    padding-top: 25px;
+    padding-bottom: 30px;
+   
+}
+
+.li1{
+    padding-left: 200px;
+    padding-top: 100px;
+    font-size: 1.2rem;
+    
+}
+.perro2{
+    padding-bottom: 30px;
+}
+
+.li2{
+    padding-left: 200px;
+    padding-top: 80px;
+    font-size: 1.2rem;
+}
+
+.gato1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.gato2{
+    padding-bottom: 30px;
+}
+
+.li3{
+    padding-left: 200px;
+    padding-top: 100px;
+    font-size: 1.2rem;
+}
+
+.preguntar{
+    padding-top: 100px;
+   
+}
+
+.boton{
+    background-color: #E8C5E5;
+}
+
+.boton:hover{
+    background-color: rgb(244, 185, 255)
+}
+
 /*Footer*/
 
 footer{
@@ -318,7 +388,9 @@ nav{
 }
 .lista-nav{
     font-size: 0.8rem;
+    padding: 0%;
 }
+
 
 /*Main home*/
 .banner h1{
@@ -372,10 +444,119 @@ font-size: 2rem;
     padding-top: 10%;
     font-size: 1rem;
 }
+
+/*Main contacto*/
+
+.sc{
+
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ratio iframe{
+    padding-bottom: 20px;
+}
+/* Ajuste de márgenes en móviles */
+.my-4 {
+    margin: 1rem 0;
+}
+
+/* Ajustar márgenes y paddings */
+body {
+    padding: 10px;
+}
+
+header {
+    margin-bottom: 15px;
 }
 
 
+/*Main Requisitos*/
 
+
+ .lista-r{
+    padding-left: 10px;
+    font-size: 0.8rem;
+ }
+ .pr{
+    font-size: 0.8rem;
+ }
+
+ .titulor {
+    font-size: 1.5rem;
+}
+
+.subr {
+    font-size: 1rem;
+}
+
+.requisitos {
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-fluid {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 20px;
+}
+
+/*Main nosotros*/
+
+.h1n{
+    font-size: 1.5rem;
+}
+.subn {
+    padding-top: 20px; /* Reducir el espacio superior */
+    font-size: 1.5rem;
+}
+
+.subn3 {
+    font-size: 1.5rem; /* Ajustar tamaño de texto */
+    padding-bottom: 20px;
+}
+
+.imgn3 {
+    margin-left: 0; /* Eliminar margen izquierdo en móviles */
+    width: 100%; /* Hacer imagen más flexible */
+}
+
+.pn {
+    padding-top: 15px; /* Reducir espacio en texto */
+    padding-left: 20px; /* Reducir padding izquierdo */
+    padding-right: 15px; /* Reducir padding derecho */
+    font-size: 1.2rem;
+}
+
+.pn3{
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+/*Main Mascotas*/
+.h1m{
+    font-size: 2rem;
+}
+
+.li1, .li2, .li3 {
+    padding-left: 0;
+    text-align: center;
+}
+
+.perro1, .perro2, .gato1, .gato2 {
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+.preguntar {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.h1m, .pm, .gmm {
+    font-size: 1.2rem;
+}
+}
 
 
 

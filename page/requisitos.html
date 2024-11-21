@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Requisitos</title>
-                <!--CSS BS-->
+    <!--AOS-->
+    <!--css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Animate-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--CSS BS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-                <!--CSS-->
+    <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -18,40 +28,48 @@
             <ul class="lista-nav">
                 <li><a href="../index.html">Inicio </a></li>
                 <li><a href="./mascotas.html">Mascotas</a></li>
-                <li><a href="./requisitos.html">Requisitos de adopción</a></li>
+                <li><a href="./requisitos.html">Requisitos</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>      
         </nav>
     </header>
-    <main class="padre row">
-        <h1 class="titulor col-12">Requisitos para la adopción:</h1>
-       
-        <img class="col-12" src="../img/requisitos1-removebg-preview.png" alt="imagen ilustrativa">
+    <main>
+        <h1 class="titulor animate__animated animate__flipInX">Requisitos para la adopción:</h1>
+        <div class="row">
+            <img class="col-12 img-fluid rounded" src="../img/requisitos1-removebg-preview.png" alt="imagen ilustrativa">
+        </div>
         
-        <h2 class="subr col-12">¡ANIMATE A ADOPTAR UN COMPAÑERO DE VIDA!</h2>
+        
+        <h2 class="subr">¡ANIMATE A ADOPTAR UN COMPAÑERO DE VIDA!</h2>
         <section class="requisitos">
             <div>
-                <ol>
+                <ol class="lista-r">
             
                     <li>Ser mayor de 21 años.</li>
                     
-                    <li>Identificación: DNI del adoptante</li>
+                    <li>Identificación: 
+                     <p class="pr">
+                        DNI del adoptante
+                     </p></li>
                     
-                    <li>Consentimiento: Todas las personas del hogar deben estar de acuerdo</li>
+                    <li>Consentimiento: 
+                    <p class="pr">Todas las personas del hogar deben estar de acuerdo</p></li>
                     
                     <li>Comprometerse con el cuidado y la salud de la mascota.</li>
                 
-                    <li>Estar bien predispuesto: te pedimos cargues tu solicitud 
-                     y respondas a nuestro contacto.</li>
+                    <li>Estar bien predispuesto: 
+                    <p class="pr">Te pedimos cargues tu solicitud 
+                     y respondas a nuestro contacto.</p></li>
     
-                    <li>Entrevistas: Realizar entrevistas previas</li> 
+                    <li>Entrevistas: 
+                        Realizar entrevistas previas</li> 
                 </ol>
                 
             </div>
 
-            <div>
-                <img src="../img/img-requisitos.jpg" alt="imagen animada mascotas">    
+            <div data-aos="fade-down-left">
+                <img class="imgr img-fluid" src="../img/img-requisitos.jpg" alt="imagen animada mascotas">    
             </div>
         </section>   
               
@@ -73,5 +91,8 @@
             <img class="mail" src="../img/logo-mail-removebg-preview.png" alt="Logo Gmail"></a>
         
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
