@@ -1,0 +1,56 @@
+// Fuente letra
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+// Variables 
+$font-titles: "Finger Paint", sans-serif;
+$font-body: "Libre Baskerville", serif;
+
+// Colores 
+$color-background: #F5EFFF;
+$color-header: #A594F9;
+$color-banner-text: rgb(127, 17, 230);
+$color-footer: blueviolet;
+$color-button-hover: rgb(244, 185, 255);
+
+// Mixins 
+@mixin flex-center($direction: row, $justify: space-between, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+  }
+  
+  /* GENERALES */
+  main {
+    background-color: $color-background;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-family: $font-titles;
+  }
+  
+  h2, h3 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+
+  // Partials
+@import "./partials/header-footer";
+@import "./partials/index";
+@import "./partials/html";
+@import "./partials/media";
+

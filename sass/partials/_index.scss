@@ -1,0 +1,110 @@
+/* HOME */
+.banner {
+    background-image: url(../img/principal3.png);
+    text-align: center;
+    padding: 180px 0;
+    
+    h1 {
+      text-decoration: underline;
+      font-size: 3rem;
+      font-family: $font-titles;
+      color: $color-banner-text;
+    }
+    
+    p {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+  
+  /* MAIN */
+.p {
+    background-image: linear-gradient(to bottom, rgb(127, 12, 230), blueviolet, $color-header);
+    padding: 15px;
+    margin-left: 0%;
+} 
+  
+  
+.pasos {
+    margin-top: 35px;
+    margin-left: 40px;
+    display: grid;
+        
+        
+    /* Definir directamente las áreas de la cuadrícula */
+    grid-template-areas: 
+      'h1 h1 h1' 
+      'h2 h2 h22' 
+      'img1 img1 img2' 
+      'text1 text1 text2' 
+      'h222 h222 h222' 
+      'img3 img3 text3';
+          
+    grid-template-columns: 30% 30% 35%;
+    grid-template-rows: 150px 100px 500px 250px 100px 400px;
+    img {
+     height: 100%;
+     width: 100%;
+    }
+      
+    h2 {
+     padding-top: 5px;
+     text-align: center;
+    }
+}
+  
+    
+  
+  
+  /* Elementos de la grid */
+  .titulo1 {
+    grid-area: h1;
+  }
+  
+  .p1, .p2, .p3 {
+    text-decoration: underline;
+  }
+  
+  .p1 {
+    grid-area: h2;
+  }
+  
+  .p2 {
+    grid-area: h22;
+  }
+  
+  .p3 {
+    grid-area: h222;
+  }
+  
+  .paso1 {
+    grid-area: img1;
+    padding-right: 20%;
+  }
+  
+  .paso2 {
+    grid-area: img2;
+  }
+  
+  .parrafo1 {
+    grid-area: text1;
+    padding-right: 20%;
+    padding-top: 10%;
+  }
+  
+  .parrafo2 {
+    grid-area: text2;
+    padding-top: 15%;
+  }
+  
+  .paso3 {
+    grid-area: img3;
+    padding-top: 30px;
+  }
+  
+  .parrafo3 {
+    grid-area: text3;
+    padding-left: 10%;
+  }
+  

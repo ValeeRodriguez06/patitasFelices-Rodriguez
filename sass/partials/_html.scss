@@ -1,0 +1,146 @@
+/* Main Requisitos */
+.titulor {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+  }
+  
+.subr {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 10px;
+    width: 100%;
+  }
+  
+.requisitos {
+    @include flex-center($justify: space-evenly);
+    padding-top: 20px;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    margin: 10px;
+    width: 100%;
+  }
+  
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+.pr {
+    font-size: 1.2rem;
+  }
+  
+  /* Main Nosotros */
+.nosotros {
+    text-align: center;
+    padding: 15px;
+  }
+  
+.subn {
+    padding: 20px;
+    padding-top: 250px;
+    text-align: center;
+  }
+  
+.imgn {
+    padding: 20px;
+  }
+  
+.pn {
+    padding: 40px;
+    padding-top: 150px;
+  }
+  
+.subn3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+.imgn3 {
+    margin-left: 130px;
+  }
+  
+.pn3 {
+    padding-left: 30px;
+  }
+  
+  /* Main Contacto */
+.tc {
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+.pc {
+    text-align: center;
+  }
+  
+.img-fluid {
+    padding: 15px 0;
+    height: auto;
+  }
+  
+.sc {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  
+.ratio iframe {
+    border-radius: 8px;
+    pointer-events: auto;
+    padding-right: 15px;
+  }
+  
+.enviar:focus {
+    border: blueviolet 5px dotted;
+  }
+  
+  /* Main Mascotas */
+.h1m {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+.pm {
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: $color-header;
+  }
+  
+.mascotas {
+    padding: 15px;
+    padding-top: 20px;
+  }
+  
+.gmm {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: $color-header;
+  }
+  
+.perro1, .perro2, .gato1, .gato2 {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  
+.li1, .li2, .li3 {
+    padding-left: 200px;
+    padding-top: 100px;
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: none;
+  }
+
+.preguntar {
+    padding-top: 100px;
+    text-align: center;
+  }
+  
+.boton {
+    background-color: #E8C5E5;
+    
+    &:hover {
+      background-color: $color-button-hover;
+    }
+  }
